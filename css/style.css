@@ -1,0 +1,103 @@
+header {
+  height: 200px;
+  width: 100%;
+  min-width: 680px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("/images/dev3.jpeg");
+  background-size: contain;
+  background-repeat: repeat;
+}
+header img {
+  height: 150px;
+  border-radius: 5em;
+}
+header h1 {
+  color: #FFFFFF;
+  font-size: 3em;
+}
+header h3 {
+  color: #FFFFFF;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Be Vietnam Pro", sans-serif;
+  font-family: "Oswald", sans-serif;
+  font-family: "Outfit", sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #7A8083;
+}
+
+.baseLayer {
+  width: 90%;
+  height: 90%;
+}
+
+.baseLayer--maxWidth {
+  max-width: 700px;
+}
+
+.aside-main {
+  display: flex;
+}
+.aside-main aside {
+  background-color: #FFFFFF;
+  width: 40%;
+  min-width: 280px;
+  padding: 2em;
+}
+.aside-main aside div {
+  margin-bottom: 50px;
+}
+.aside-main aside div p > img {
+  height: 1em;
+}
+.aside-main aside hr {
+  width: 50px;
+  height: 4px;
+  background-color: #7A8083;
+  border: none;
+  margin: 10px 0;
+}
+.aside-main aside .contact > p {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+}
+.aside-main aside .contact > p img {
+  margin: 5px;
+}
+.aside-main main {
+  background-color: #EFEFEF;
+  width: 60%;
+  min-width: 400px;
+  padding: 2em;
+}
+.aside-main main ul {
+  padding: 2em;
+}
+.aside-main main hr {
+  width: 50px;
+  height: 4px;
+  background-color: #7A8083;
+  border: none;
+  margin: 10px 0;
+}
+.aside-main main .boldTitle {
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */

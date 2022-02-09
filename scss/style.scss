@@ -1,0 +1,96 @@
+$aside-color: #FFFFFF;
+$main-color: #EFEFEF;
+$hr-color: #7A8083;
+$h-color: #8C8F8E;
+$heading-text-color: #FFFFFF;
+$text-color: #000000;
+
+@use 'header.scss';
+@mixin flex-mixin {
+  display: flex;
+}
+
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  font-family: 'Outfit', sans-serif;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $hr-color;
+}
+
+.baseLayer {
+  width: 90%;
+  height: 90%;
+}
+
+.baseLayer--maxWidth {
+  max-width: 700px;
+}
+
+.aside-main {
+  @include flex-mixin;
+
+  aside {
+    background-color: $aside-color;
+    width: 40%;
+    min-width: 280px;
+    padding: 2em;
+    
+    div {
+      margin-bottom: 50px;
+
+      p > img {
+        height: 1em;
+      }
+    }
+    hr {
+      width: 50px;
+      height: 4px;
+      background-color: $hr-color;
+      border: none;
+      margin: 10px 0;
+    }
+    .contact > p {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+
+      img {
+        margin: 5px;
+      }
+    }
+  }
+  main {
+    background-color: $main-color;
+    width: 60%;
+    min-width: 400px;
+    padding: 2em;
+
+    ul {
+      padding: 2em;
+    }
+    hr {
+      width: 50px;
+      height: 4px;
+      background-color: $hr-color;
+      border: none;
+      margin: 10px 0;
+    }
+    .boldTitle {
+      font-style: italic;
+    }
+  }
+}

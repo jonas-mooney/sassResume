@@ -1,0 +1,31 @@
+$aside-color: #FFFFFF;
+$main-color: #EFEFEF;
+$hr-color: #7A8083;
+$h-color: #8C8F8E;
+$heading-text-color: #FFFFFF;
+$text-color: #000000;
+
+header {
+  height: 200px;
+  width: 100%;
+  min-width: 680px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url('/images/dev3.jpeg');
+  background-size:contain;
+  background-repeat: repeat;
+
+  img {
+    height: 150px;
+    border-radius: 5em;
+  }
+  h1 {
+    color: $heading-text-color;
+    font-size: 3em;
+  }
+  h3 {
+    color: $heading-text-color;
+  }
+
+}
